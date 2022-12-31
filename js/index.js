@@ -163,12 +163,15 @@ S.UI = (function () {
 
       switch (action) {
         case 'countdown':
-          var endtime = new Date("2023/1/1,00:15:00");//结束时间
+          var endtime = new Date("2023/1/1,00:00:00");//结束时间
           var nowtime = new Date();//当前时间
           var lefttime=  parseInt((endtime.getTime()-nowtime.getTime())/1000);
           value = lefttime;
           value = parseInt(value) || 10;
           value = value > 0 ? value : 10;
+          if (value > 60) {
+            value = 10;
+          }
 
           timedAction(function (index) {
             if (index === 0) {
