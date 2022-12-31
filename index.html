@@ -63,10 +63,6 @@
         seeds = new Array();
         sparkPics = new Array();
         s = "https://cantelope.org/NYE/";
-        s1 = "music.mp3"
-		    pow = new Audio(s1);
-        pow.src = s1;
-        pow.play();
         for (i = 1; i <= 10; ++i) {
           sparkPic = new Image();
           sparkPic.src = s + "spark" + i + ".png";
@@ -78,6 +74,13 @@
         // pow3 = new Audio(s + "pow3.ogg");
         // pow4 = new Audio(s + "pow4.ogg");
         frames = 0;
+      }
+
+      function playAudio() {
+        s1 = "https://github.com/Kejia928/NewYear/blob/main/music.mp3"
+		    pow = new Audio();
+        pow.src = s1;
+        pow.play();
       }
 
       function rasterizePoint(x, y, z) {
@@ -403,6 +406,7 @@
         cy = canvas.height / 2;
       });
 
+      playAudio();
       initVars();
       frame();
     </script>
