@@ -77,8 +77,8 @@
       }
 
       function playAudio() {
-        s1 = "https://github.com/Kejia928/NewYear/blob/main/music.mp3"
-		    pow = new Audio();
+        s1 = "./mp3/music.mp3"
+		    pow = new Audio(s1);
         pow.src = s1;
         pow.play();
       }
@@ -406,8 +406,9 @@
         cy = canvas.height / 2;
       });
 
-      playAudio();
+      
       initVars();
+      playAudio();
       frame();
     </script>
     <script src="js/index.js"></script>
