@@ -28,7 +28,7 @@ var S = {
       // var endtime = new Date("2022/12/31,16:04:00");//结束时间
       // var nowtime = new Date();//当前时间
       // var lefttime=  parseInt((endtime.getTime()-nowtime.getTime())/1000);
-      S.UI.simulate('|#countdown 3||郑彬浩|2023|新|年|快|乐|#rectangle|');
+      S.UI.simulate('|#countdown 3||郑冰茹|2023|新|年|快|乐|天|天|开|心|^_^|#rectangle|');
     }
 
     S.Drawing.loop(function () {
